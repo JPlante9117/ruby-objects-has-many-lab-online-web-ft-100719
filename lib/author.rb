@@ -4,7 +4,6 @@ class Author
   
   def initialize(name)
     @name = name        #gives the author a name
-    #@posts = []         #creates an array of the current author's posts
   end
   
   def posts 
@@ -12,7 +11,6 @@ class Author
   end
   
   def add_post(given_post)    #takes a given post, associates it with the author, and adds it to the array of posts
-    #@posts << given_post
     given_post.author = self
   end
   
