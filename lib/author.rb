@@ -10,7 +10,7 @@ class Author
     Post.all.select { |post| post.author == self }  #selecting all posts by this author from the total post list
   end
   
-  def add_post(given_post)    #takes a given post, associates it with the author, and adds it to the array of posts
+  def add_post(given_post)    # takes a given post, associates it with the author. It is added to @@all in the Post class upon                                       # initialization
     given_post.author = self
   end
   
